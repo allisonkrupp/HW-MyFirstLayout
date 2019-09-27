@@ -36,14 +36,27 @@ body {
   }
 #nav {
     flex-direction: row;
-    margin-top: 20px;
+    padding-top: 10px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
   }
   .navbar_link:hover {
       cursor: pointer;
       color: black;
   }
+  .mainText {
+      width: 100%;
+      height: 600px;
+      padding-top: 250px;
+      }
+  .copy {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
 h1 {
-      margin: 150px auto;
       text-align: center;
       font-weight: 900;
       min-width: 250px;
@@ -103,10 +116,28 @@ h1 {
     width: 100%;
     padding-bottom: 150px;
   }
+  .footerLinks {
+      padding-bottom: 100px;
+      width: 100%;
+    }
+  .footerLinks ul{
+      display: flex;
+      justify-content: center;
+  }
+  .footerLinks li {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.500);
+    padding: 15px;
+    text-align: center;
+  }
+  .footerLinks li:hover {
+      color: black;
+  }
 
 
   @media only screen and (max-width:1000px) {
     #nav {
+        padding-top: 30px;
         display: flex;
     }
     .left {
@@ -117,14 +148,16 @@ h1 {
     }
     .center {
         width: 60%;
-        margin-left: -10px;
+        margin-left: -20px;
         margin-top: -20px;
+    }
+    .copy {
+        min-width: 350px;
     }
     h1 {
         font-size: 35px;
-        width: 80%;
     }
-    .firstBlock{
+    .firstBlock {
         height: 750px;
         width: 100%;
     }
