@@ -77,6 +77,14 @@ h1 {
       margin-bottom: auto;
       color: black;
   }
+  .thirdBlock {
+    background-image: linear-gradient(to bottom right, rgb(1, 1, 109), rgb(165, 1, 165));
+    background-position: top;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 150px;
+    color: white;
+}
 .container {
     width: 100%;
 }
@@ -116,6 +124,32 @@ h1 {
     width: 100%;
     padding-bottom: 150px;
   }
+  .downloadResume {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: auto;
+  }
+  .download {
+    text-align: center;
+}
+.downloadCopy {
+    padding-bottom: 75px;
+}
+.downloadButton {
+    width: 300px;
+    height: 75px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    background-color: black;
+    margin: auto;
+    cursor: pointer;
+}
+.downloadButton:hover {
+    border: 1px solid white;
+}
   .footerLinks {
       padding-bottom: 100px;
       width: 100%;
@@ -133,12 +167,16 @@ h1 {
   .footerLinks li:hover {
       color: black;
   }
+  .footerLinks li:active {
+      color: black;
+  }
 
 
-  @media only screen and (max-width:1000px) {
+  @media only screen and (max-width:1024px) {
     #nav {
         padding-top: 30px;
         display: flex;
+        width: 100%;
     }
     .left {
         display: none;
@@ -147,8 +185,8 @@ h1 {
         display: none;
     }
     .center {
+        text-align: left;
         width: 60%;
-        margin-left: -20px;
         margin-top: -20px;
     }
     .copy {
@@ -161,6 +199,9 @@ h1 {
         height: 750px;
         width: 100%;
     }
+    .thirdBlock {
+        height: 400px;
+    }
     .container {
         margin-left: 50px;
         padding-right: auto;
@@ -168,6 +209,7 @@ h1 {
     }
     .list {
         margin-top: 25px;
+        margin-left: -40px;
         display: block;
         min-width: 250px;
     }
@@ -188,4 +230,21 @@ h1 {
     .software {
         padding-bottom: 100px;
     }
+    .downloadResume {
+        padding-top: 100px;
+      }
+    .footerLinks {
+        padding-bottom: 50px;
+        margin-left: 0px;
+        width: 100%;
+          }
+    .footerLinks ul{
+        display: block;
+        justify-content: center;
+    }
+    .footerLinks li {
+        padding: 15px;
+        text-align: center;
+      }
+
   }
